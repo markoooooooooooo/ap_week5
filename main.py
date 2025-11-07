@@ -1,34 +1,29 @@
-# Problem Set 1: Indexing and Slicing Strings
-# Basic Indexing:
-# Given the string magic = 'abracadabra',
-# a. Retrieve the 5th character.
-# b. Retrieve the second to last character.
-# c. Find the first occurrence of the letter 'c'.
+# refactoring means to
+# restructure code without
+# changing its external behavior
+# This helps improve code readability
+# and maintainability.
+from problem_set1 import problem1
+from advanced_slicing import advanced_slice
+#call the functions
+problem1() # this is an abstract representation of the function
 
-# Advanced Slicing:
-# Given the string alphabet = 'abcdefghijklmnopqrstuvwxyz',
-# a. Extract the letters 'hij'.
-# b. Extract every second letter starting from 'a' to 'm'.
+
+
+
 # c. Reverse the entire string using slicing.
 
 # Problem Set 2: Extracting Information
 # From Descriptions:
 # Extract the name of the famous personality from the quote "Ask not what your country can do for you — ask what you can do for your country. - John F. Kennedy"
 
-# Manipulating Words:
-# Given the string info = "Python is fun. Fun is good. Good is subjective.",
-# a. Extract the word 'subjective' without knowing its exact position.
-# b. Extract every third word.
-# c. Reverse the positions of the words, but keep the characters in each word in the same order.
+
 
 # Problem Set 3: String Methods
 # Upper & Lower:
 # Convert the following text to lowercase: "MAY THE FORCE BE WITH YOU."
 
-# String Joining and Splitting:
-# Given the list motto = ["Make", "haste", "slowly."],
-# a. Convert the list into a single string.
-# b. Now, split the string at every occurrence of the letter 'a'.
+
 
 # Replacing Words:
 # Modify the sentence: "Life is what happens when you are busy making other plans."
@@ -46,10 +41,7 @@
 # a. Calculate the number of characters (including spaces and punctuation) in the word/phrase: "Supercalifragilisticexpialidocious".
 # b. Count the number of times the letter 'i' appears in the same word/phrase.
 
-magic = "abracadabra"
-print(magic[5])
-print(magic[-2])
-print(magic.index("c"))
+
 
 
 alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -57,17 +49,10 @@ print(alphabet[7:10])
 print(alphabet[0:13:2])
 print(alphabet[::-1])
 
-quote = "Ask not what your country can do for you — ask what you can do for your country. - John F. Kennedy"
-print(quote.find("John F. Kennedy")) 
-famous_personality = quote[83:]
-print(famous_personality)
 
-info = "Python is fun. Fun is good. Good is subjective"
-print(info.rfind("subjective"))
-subjective_word = info[36:]
 
-text = "MAY THE FORCE BE WITH YOU."
-lower_text = text.lower()
+
+
 
 motto = ["Make", "haste", "slowly."]
 joined_motto = ' '.join(motto)
